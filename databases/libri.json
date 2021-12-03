@@ -1,0 +1,234 @@
+<<<<<<< HEAD
+{"libri":[
+    {
+      "_id": "61a93522dc10e6dba1863b92",
+      "index": 0,
+      "guid": "6d4e2585-edc5-4498-aab6-f2e1cb4d0cb6",
+      "isActive": true,
+      "balance": "$1,131.65",
+      "picture": "http://placehold.it/32x32",
+      "age": 24,
+      "eyeColor": "brown",
+      "name": "Walton Harrington",
+      "gender": "male",
+      "company": "CUBICIDE",
+      "email": "waltonharrington@cubicide.com",
+      "phone": "+1 (804) 476-2936",
+      "address": "942 Elliott Place, Bridgetown, Marshall Islands, 3665",
+      "about": "Dolore ea exercitation excepteur velit fugiat reprehenderit veniam exercitation duis velit tempor labore dolor tempor. Dolor quis mollit dolore do quis irure sit nostrud laboris nisi exercitation incididunt dolore laborum. Enim dolore amet in occaecat nostrud officia in aliquip nostrud incididunt aliqua enim. Anim officia ex amet duis. Commodo ex id ipsum ullamco adipisicing. Nostrud proident aliqua ipsum occaecat culpa minim et velit aliqua enim ipsum pariatur. Voluptate cillum ut eu incididunt qui cupidatat voluptate elit quis voluptate fugiat.\r\n",
+      "registered": "2019-11-06T08:14:46 -01:00",
+      "latitude": 16.036806,
+      "longitude": -170.514673,
+      "tags": [
+        "Lorem",
+        "cillum",
+        "est",
+        "id",
+        "aliquip",
+        "minim",
+        "labore"
+      ],
+      "friends": [
+        {
+          "id": 0,
+          "name": "Lilian Glover"
+        },
+        {
+          "id": 1,
+          "name": "Dorthy Cox"
+        },
+        {
+          "id": 2,
+          "name": "Montoya Sparks"
+        }
+      ],
+      "greeting": "Hello, Walton Harrington! You have 8 unread messages.",
+      "favoriteFruit": "strawberry"
+    },
+    {
+      "_id": "61a935222beb19e26191699c",
+      "index": 1,
+      "guid": "98d74397-763b-4229-918f-cf486ceddbb3",
+      "isActive": true,
+      "balance": "$1,262.53",
+      "picture": "http://placehold.it/32x32",
+      "age": 24,
+      "eyeColor": "green",
+      "name": "Angelina Lewis",
+      "gender": "female",
+      "company": "GUSHKOOL",
+      "email": "angelinalewis@gushkool.com",
+      "phone": "+1 (939) 446-2943",
+      "address": "943 Glenwood Road, Draper, Maryland, 2938",
+      "about": "Laborum et voluptate sunt cupidatat officia officia. Et duis culpa minim aute id quis amet veniam nulla. Exercitation incididunt eiusmod Lorem ut dolore sit aliqua ex labore nisi excepteur enim deserunt eiusmod.\r\n",
+      "registered": "2017-06-12T08:03:02 -02:00",
+      "latitude": -26.105224,
+      "longitude": -76.29651,
+      "tags": [
+        "enim",
+        "amet",
+        "deserunt",
+        "laborum",
+        "aliqua",
+        "minim",
+        "aliquip"
+      ],
+      "friends": [
+        {
+          "id": 0,
+          "name": "Alberta Nguyen"
+        },
+        {
+          "id": 1,
+          "name": "Nash Buckner"
+        },
+        {
+          "id": 2,
+          "name": "Tisha Spears"
+        }
+      ],
+      "greeting": "Hello, Angelina Lewis! You have 7 unread messages.",
+      "favoriteFruit": "apple"
+    },
+    {
+      "_id": "61a935223c025c9fff4c505b",
+      "index": 2,
+      "guid": "62058ae8-515b-4739-9c92-db9c7dd106bc",
+      "isActive": true,
+      "balance": "$2,531.90",
+      "picture": "http://placehold.it/32x32",
+      "age": 40,
+      "eyeColor": "blue",
+      "name": "Witt Burt",
+      "gender": "male",
+      "company": "EXOSTREAM",
+      "email": "wittburt@exostream.com",
+      "phone": "+1 (952) 477-2741",
+      "address": "394 Lawrence Street, Devon, Pennsylvania, 1686",
+      "about": "Commodo ullamco ipsum laboris Lorem excepteur eu. Eiusmod enim exercitation laboris eu incididunt enim veniam duis eu ut esse. Anim fugiat culpa laboris occaecat laboris. Culpa ut eiusmod deserunt nostrud ad. Mollit sit eiusmod proident labore proident incididunt occaecat. Ullamco sint id occaecat consequat do officia.\r\n",
+      "registered": "2018-11-20T01:51:42 -01:00",
+      "latitude": 37.208245,
+      "longitude": 25.318539,
+      "tags": [
+        "nisi",
+        "deserunt",
+        "culpa",
+        "dolore",
+        "mollit",
+        "anim",
+        "eu"
+      ],
+      "friends": [
+        {
+          "id": 0,
+          "name": "Lesa Mckay"
+        },
+        {
+          "id": 1,
+          "name": "Helen Ballard"
+        },
+        {
+          "id": 2,
+          "name": "Mckenzie Kennedy"
+        }
+      ],
+      "greeting": "Hello, Witt Burt! You have 1 unread messages.",
+      "favoriteFruit": "apple"
+    },
+    {
+      "_id": "61a93522b347a39946f4e222",
+      "index": 3,
+      "guid": "318c9be7-8b39-4dd4-9859-2f0751b2aa51",
+      "isActive": true,
+      "balance": "$2,259.77",
+      "picture": "http://placehold.it/32x32",
+      "age": 28,
+      "eyeColor": "blue",
+      "name": "Hilary Cunningham",
+      "gender": "female",
+      "company": "TOURMANIA",
+      "email": "hilarycunningham@tourmania.com",
+      "phone": "+1 (827) 589-3819",
+      "address": "233 Dahill Road, Somerset, South Carolina, 2940",
+      "about": "Consequat cillum pariatur deserunt proident. Do quis consectetur veniam exercitation do. Occaecat id magna Lorem minim Lorem proident elit. Culpa deserunt sint ex elit laboris nostrud irure cillum. Laborum dolor anim ut irure eu aliqua culpa nisi.\r\n",
+      "registered": "2021-08-07T08:59:14 -02:00",
+      "latitude": -77.15348,
+      "longitude": 174.838577,
+      "tags": [
+        "laborum",
+        "voluptate",
+        "adipisicing",
+        "voluptate",
+        "consectetur",
+        "excepteur",
+        "ipsum"
+      ],
+      "friends": [
+        {
+          "id": 0,
+          "name": "Kristy Munoz"
+        },
+        {
+          "id": 1,
+          "name": "Warner Peck"
+        },
+        {
+          "id": 2,
+          "name": "Gilbert Lindsey"
+        }
+      ],
+      "greeting": "Hello, Hilary Cunningham! You have 4 unread messages.",
+      "favoriteFruit": "strawberry"
+    },
+    {
+      "_id": "61a93522031f3ab9171053a5",
+      "index": 4,
+      "guid": "11f6f212-4cd3-4077-bc6d-d84760e321fe",
+      "isActive": true,
+      "balance": "$2,749.20",
+      "picture": "http://placehold.it/32x32",
+      "age": 40,
+      "eyeColor": "blue",
+      "name": "Althea Jennings",
+      "gender": "female",
+      "company": "BLUPLANET",
+      "email": "altheajennings@bluplanet.com",
+      "phone": "+1 (996) 452-2579",
+      "address": "358 Taaffe Place, Wilmington, Kentucky, 9020",
+      "about": "Mollit sint ex officia laborum reprehenderit dolor do sit cupidatat anim proident culpa adipisicing. Consectetur dolor ullamco duis velit Lorem excepteur anim tempor dolor sint reprehenderit laborum laboris. Sit aute voluptate aute in id commodo nostrud ea ipsum aliqua. Nostrud sunt esse consectetur eu mollit duis amet incididunt incididunt enim tempor.\r\n",
+      "registered": "2020-01-26T02:00:01 -01:00",
+      "latitude": -69.626002,
+      "longitude": 95.406093,
+      "tags": [
+        "nisi",
+        "mollit",
+        "non",
+        "reprehenderit",
+        "proident",
+        "anim",
+        "nulla"
+      ],
+      "friends": [
+        {
+          "id": 0,
+          "name": "Hallie Stark"
+        },
+        {
+          "id": 1,
+          "name": "Erickson Hatfield"
+        },
+        {
+          "id": 2,
+          "name": "Sheri Fleming"
+        }
+      ],
+      "greeting": "Hello, Althea Jennings! You have 6 unread messages.",
+      "favoriteFruit": "apple"
+    }
+  ]
+=======
+{
+    "name": "Harry Potter",
+    "author": "J. K. Rowling"
+>>>>>>> a6a42d1bf89689cadd3715ac12ce9dfc9e68cf47
+}
