@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {"libri":[
     {
       "_id": "61a93522dc10e6dba1863b92",
@@ -226,9 +225,4 @@
       "favoriteFruit": "apple"
     }
   ]
-=======
-{
-    "name": "Harry Potter",
-    "author": "J. K. Rowling"
->>>>>>> a6a42d1bf89689cadd3715ac12ce9dfc9e68cf47
 }

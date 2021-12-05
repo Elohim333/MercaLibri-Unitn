@@ -16,13 +16,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.listen(49146, () => {
-    console.log("APIs Running");
+    console.log("APIs attivate");
 
 
 });
 
-app.get('C:\\Users\\Utente\\Desktop\\IS2021_API_G04\\databases', (request, response) => {
-    var data = fs.readFileSync('libri.json');
+app.get('http://localhost/ingsoftware/api/libri', (request, response) => {
+    var data = fs.readFileSync('http://localhost/ingsoftware/databases/libri.json');
     var myObject = JSON.parse(data);
     
     response.send(myObject);
