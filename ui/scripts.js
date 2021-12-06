@@ -29,6 +29,7 @@ request.onload = function () {
         var data = JSON.parse(this.response);
         data.libri.forEach(libro => 
                 console.log(libro._id)
+                //commento
             )
     } else {
         const errorMessage = document.createElement('marquee');
