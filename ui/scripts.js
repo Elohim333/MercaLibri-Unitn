@@ -27,7 +27,9 @@ request.onload = function () {
 
         // Begin accessing JSON data here
         var data = JSON.parse(this.response);
-        console.log(data);
+        data.libri.forEach(libro => 
+                console.log(libro._id)
+            )
     } else {
         const errorMessage = document.createElement('marquee');
         errorMessage.textContent = `THE API IS NOT WORKING!`;
