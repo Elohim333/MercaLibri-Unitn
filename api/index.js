@@ -21,8 +21,8 @@ app.listen(49146, () => {
 
 });
 
-app.get('http://localhost/ingsoftware/api/libri', (request, response) => {
-    var data = fs.readFileSync('http://localhost/ingsoftware/databases/libri.json');
+app.get('/api/libri', (request, response) => {
+    var data = fs.readFileSync('libri.json');
     var myObject = JSON.parse(data);
     
     response.send(myObject);
