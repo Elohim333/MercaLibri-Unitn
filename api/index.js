@@ -63,9 +63,18 @@ app.post('/api/libri', (request, response) => {
 
         database.collection("Libri").insertOne({
             idLibro: numOfDocs + 1,
-            Titolo: request.body['Libro_nome']
+            Titolo: request.body['Titolo'],
+            Autore: request.body['Autore'],
+            Materia: request.body['Materia'],
+            Valutazione: request.body['Valutazione'],
+            Venditore: request.body['Venditore'],
+            Prezzo: request.body['Prezzo'],
+            ISBN: request.body['ISBN'],
+            Casa_editrice: request.body['Casa_editrice'],
+            Libro_universitario: request.body['Libro_universitario']
         });
 
-        response.json("Added Successfully");
+        //response.json("Added Successfully");
+        app.location = "venditaSuccess.html";
     })
 })
