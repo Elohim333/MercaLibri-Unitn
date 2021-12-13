@@ -1,10 +1,6 @@
 const app = document.getElementById('root');
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> d404606 (modifica scripts.js)
 const container = document.createElement('div');
 container.setAttribute('class', 'container');
 
@@ -22,7 +18,6 @@ card.appendChild(h1);
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
-<<<<<<< HEAD
 request.open('GET', 'http://localhost/ingsoftware/api/libri', true);
 request.onload = function () {
 
@@ -37,18 +32,6 @@ request.onload = function () {
         errorMessage.textContent = `THE API IS NOT WORKING!`;
         app.appendChild(errorMessage);
     }
-=======
-request.open('GET', 'http://localhost/ingsoftware/databases/', true);
-request.onload = function () {
-
-
-    // Begin accessing JSON data here
-    var data = JSON.parse(this.response);
-    console.log(data);
-    data.libri.forEach(libro => {
-        console.log(libro.phone);
-    });
->>>>>>> d404606 (modifica scripts.js)
 
 }
 
