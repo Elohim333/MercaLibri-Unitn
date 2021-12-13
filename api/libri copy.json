@@ -1,0 +1,14 @@
+   [{
+      "idLibro": 0,
+      "Titolo": "Harry Potter",
+      "Autore": "J. k. Rowling",
+      "Materia": "Letteratura",
+      "Valutazione": 5,
+      "Venditore": "Luca Cavalcanti",
+      "Prezzo": 15.75,
+      "ISBN": "IT04157AF53EL",
+      "Casa_editrice": "Mondadori",
+      "Libro_universitario": 0
+    }
+
+   ]
