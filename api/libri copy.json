@@ -8,7 +8,20 @@
       "Libri_veduti": 3,
       "Libri_comprati": 12,
       "Valutazione_media": 4.6,
-      "Libro_universitario": 0
-    }
+      "Libro_universitario": 0,
+      "Recensioni": 
+      [
+         {
+            "Utente": "Girolamo Campanella",
+            "Valutazione": 5,
+            "Testo": "Gianni si è dimostrato molto disponibile. Ci siamo accordati subito per trovarci per la consegna del libro. Inoltre il testo era in condizioni eccellenti come da descrizione."
+         },
+         {
+            "Utente": "Franco Campana",
+            "Valutazione": 4,
+            "Testo": "Libro comprato senza problemi e in ottime condizioni. Unica pecca è stata che è arrivato in ritardo all'appuntamento per la consegna del libro."
+         }
+      ]
+      }
 
    ]
