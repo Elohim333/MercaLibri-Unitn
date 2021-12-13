@@ -74,7 +74,7 @@ app.post('/api/libri', (request, response) => {
             Libro_universitario: request.body['Libro_universitario']
         });
 
-        //response.json("Added Successfully");
-        app.location = "venditaSuccess.html";
+        response.json("Added Successfully");
+        //app.location = "venditaSuccess.html";
     })
 })
