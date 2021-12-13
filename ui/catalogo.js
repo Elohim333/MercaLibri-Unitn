@@ -15,13 +15,13 @@ request.onload = function () {
 
         // Begin accessing JSON data here
         var data = JSON.parse(this.response);
-        data.libri.forEach(libro => {
+        data.forEach(libro => {
             
             const card = document.createElement('div');
             card.setAttribute('class', 'card');
 
             const h1 = document.createElement('h1');
-            h1.textContent = libro.email;
+            h1.textContent = libro.Titolo;
 
             container.appendChild(card);
             card.appendChild(h1);
