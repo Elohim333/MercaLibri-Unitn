@@ -1,13 +1,13 @@
    [{
-      "idLibro": 0,
-      "Titolo": "Harry Potter",
-      "Autore": "J. k. Rowling",
-      "Materia": "Letteratura",
-      "Valutazione": 5,
-      "Venditore": "Luca Cavalcanti",
-      "Prezzo": 15.75,
-      "ISBN": "IT04157AF53EL",
-      "Casa_editrice": "Mondadori",
+      "idUtente": 1,
+      "Nome": "Gianni",
+      "Cognome": "Verdi",
+      "Mail_ateneo": "gianni.verdi@unitn.it",
+      "Mail_personale": "giannigreen@gmail.com",
+      "Libri_in_vendita": 10,
+      "Libri_veduti": 3,
+      "Libri_comprati": 12,
+      "Valutazione_media": 4.6,
       "Libro_universitario": 0
     }
 
