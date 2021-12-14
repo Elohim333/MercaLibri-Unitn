@@ -55,6 +55,52 @@ app.get('/api/libri', (request, response) => {
     });
 })
 
+app.get('/api/libri/search/:titolo', (request, response) => {
+    database.collection("Libri").find({"Titolo":request.params.Titolo}).toArray((error, result) => {
+        if(error) {
+            console.log(error);
+        }
+
+        response.send(result);
+    });
+});
+
+/*app.post('/api/libri/search', (req, res) => {
+    var viewData = {
+        libro : []
+    }
+    var data = JSON.parse(database.collection("Libri").find({}).toArray((error, result) => {
+        if(error) {
+            console.log(error);
+        }
+        return result;
+    }))
+    var libri = result.
+    //var myObject = JSON.parse(data);
+    //var data = [];
+
+    var searchVal=req.body['titolo'];
+    console.log(searchVal);
+
+    var jsonObject ={};
+    var libri=[];
+    jsonObject.libri=libri;
+
+    data.array.forEach(libro => {
+        if(libro.titolo==searchVal){
+            jsonObject.push(libro);
+        }
+    });
+
+
+    var newData=JSON.stringify(jsonObject);
+
+    fs.writeFile('search.json', newData, err =>{
+        if(err) throw err;
+    })
+    response.sendFile(path.resolve("../ui/search.html"));
+})*/
+
 app.post('/api/libri', (request, response) => {
     database.collection("Libri").count({}, function (error, numOfDocs) {
         if(error) {
