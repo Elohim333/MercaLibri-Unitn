@@ -56,14 +56,56 @@ app.get('/api/libri', (request, response) => {
 })
 
 app.get('/api/libri/search/:titolo', (request, response) => {
-    database.collection("Libri").find({"Titolo":request.params.Titolo}).toArray((error, result) => {
+    database.collection("Libri").find({"Titolo":request.params.titolo}).toArray((error, result) => {
         if(error) {
             console.log(error);
         }
-
         response.send(result);
     });
+})
+
+/*app.get('/api/libri/search/:titolo', (request, response) => {
+    database.collection("Libri").find({"Titolo":request.params.titolo}).toArray((error, result) => {
+        if(error) {
+            console.log(error);
+        }
+        response.send(result);
+    });
+})*/
+
+/*app.post('/api/libri/search/:titolo', (request, response) => {
+    
+    var data=database.collection("Libri").find({"Titolo":"Harry Potter"}).toArray((error, result) => {
+        if(error) {
+            console.log(error);
+        }
+        else{
+            console.log("ok");
+            return result; 
+        }
+        
+    })
+
+    data.forEach(libro => {
+        console.log(libro.Titolo);
+    });
+    var jsonObject ={};
+    var libri=[];
+    jsonObject = JSON.parse(data);
+
+    var newData=JSON.stringify(jsonObject);
+
+    fs.writeFile('search.json', newData, err =>{
+        if(err) throw err;
+    })
+    response.sendFile(path.resolve("../ui/search.html"));
 });
+
+app.get('/api/libri/search', (request, response) => {
+    var data=fs.readFileSync('search.json');
+    var myObject=JSON.parse(data);
+    response.send(myObject);
+})*/
 
 /*app.post('/api/libri/search', (req, res) => {
     var viewData = {
