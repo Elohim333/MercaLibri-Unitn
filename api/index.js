@@ -55,14 +55,65 @@ app.get('/api/libri', (request, response) => {
     });
 })
 
-app.get('/api/libri/search/:titolo', (request, response) => {
+/*app.get('/api/libri/search/:titolo', (request, response) => {
     database.collection("Libri").find({"Titolo":request.params.titolo}).toArray((error, result) => {
         if(error) {
             console.log(error);
         }
         response.send(result);
     });
+})*/
+
+app.get('/api/libri/search/:titolo', (request, response) => {
+database.collection("Libri").find({"Titolo": new RegExp('.*' + request.params.titolo + '.*')}).toArray((error, result) => {
+        if(error) {
+            console.log(error);
+        }
+        response.send(result);
+    });
 })
+
+app.get('/api/libri/filtro/:filtro', (request, response) => {
+    switch(request.params.filtro){
+        case "Prezzo":
+            database.collection("Libri").find({}).sort({"Prezzo": -1}).toArray((error, result) => {
+                if(error) {
+                    console.log(error);
+                }
+        
+                response.send(result);
+            });
+        break;
+        case "Titolo":
+            database.collection("Libri").find({}).sort({"Titolo": -1}).toArray((error, result) => {
+                if(error) {
+                    console.log(error);
+                }
+        
+                response.send(result);
+            });
+        break;
+        case "Valutazione":
+            database.collection("Libri").find({}).sort({"Valutazione": -1}).toArray((error, result) => {
+                if(error) {
+                    console.log(error);
+                }
+        
+                response.send(result);
+            });
+        break;
+        default:
+            database.collection("Libri").find({}).toArray((error, result) => {
+                if(error) {
+                    console.log(error);
+                }
+        
+                response.send(result);
+            });
+        break;
+    }
+    
+});
 
 /*app.get('/api/libri/search/:titolo', (request, response) => {
     database.collection("Libri").find({"Titolo":request.params.titolo}).toArray((error, result) => {
