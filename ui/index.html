@@ -17,10 +17,10 @@
 <body>
     <div id="app" class="container">
         <h3 class="d-flex justify-content-center">
-            Mercalibri
+            MercaLibri Unitn
         </h3>
         <h5 class="d-flex justify-content-center">
-            il sito più bello della storia del cinema
+            Il sito più bello della storia del cinema
         </h5>
 
         <nav class="navbar navbar-expand-sm bg-light navbar-dark">
@@ -29,17 +29,22 @@
                 <router-link class="btn btn-light btn-outline-primary"
                 to="/home">Home</router-link>
             </li>
+            <br/>
             <li class="nav-item m-1">
-                <router-link class="btn btn-light btn-outline-primary"
-                to="/vendita">Pagina vendita</router-link>
+                <form action="vendita.html">
+                    <input type="submit" value="Vendi un libro" />
+                </form>
+                
             </li>
             <li class="nav-item m-1">
                 <router-link class="btn btn-light btn-outline-primary"
                 to="/catalogo">Catalogo</router-link>
             </li>
+            <br/>
             <li class="nav-item m-1">
-                <router-link class="btn btn-light btn-outline-primary"
-                to="/pagina_personale">Pagina personale</router-link>
+                <form action="areaPersonale.html">
+                    <input type="submit" value="Pagina personale"/>
+                </form>
             </li>
             <li class="nav-item m-1">
                 <router-link class="btn btn-light btn-outline-primary"
@@ -55,8 +60,9 @@
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     <script src="home.js"></script>
+    <!--
     <script src="pagina personale.js"></script>
-    <script src="vendita.js"></script>
+    <script src="vendita.js"></script>-->
     <script src="catalogo.js"></script>
     <script src="chi siamo.js"></script>
     <script src="app.js"></script>
