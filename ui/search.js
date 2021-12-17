@@ -1,34 +1,14 @@
-const app = document.getElementById('root');
+/*var app = document.getElementById('root');
 
 
 
 const container = document.createElement('div');
 container.setAttribute('class', 'container');
 
-var f = document.createElement("form");
-f.setAttribute('class', 'container');
-f.setAttribute('method', "post");
-f.setAttribute('action','http://localhost:49146/api/libri/search/:titolo');
 
-
-
-var i = document.createElement("input");
-i.type = "text";
-i.name = "titolo_libro";
-i.id = "titolo";
-
-var s = document.createElement("input");
-s.type="submit";
-s.value="Search";
-
-f.appendChild(i);
-f.appendChild(s);
-
-app.appendChild(f);
-app.appendChild(container);
 
 var request = new XMLHttpRequest();
-request.open('GET', 'http://localhost:49146/api/libri', true);
+request.open('GET', 'http://localhost:49146/api/libri/search', true);
 request.onload = function () {
 
 
@@ -57,4 +37,4 @@ request.onload = function () {
 }
 
 
-request.send();
+request.send();*/

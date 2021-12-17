@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -29,4 +29,30 @@
     </form>
 </body>
 
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MercaLibri Unitn</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/vue"></script>
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+
+<body>
+<p>ci siamo o no dio bestio</p>  
+<div id="app">
+    <div class="cart">
+    </div>
+    <product :premium="premium" @add-to-cart="updateCart"></product>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="catalogo.js"></script>    
+  </div>
+</body>
 </html>
