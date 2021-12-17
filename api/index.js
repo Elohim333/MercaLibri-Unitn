@@ -1,5 +1,5 @@
 const Express = require("express");
-const app = Express();
+var app = Express();
 
 var fs = require('fs');
 var MongoClient = require("mongodb").MongoClient;
@@ -30,8 +30,6 @@ app.listen(49146, () => {
             console.log("Mongo DB Connection Successful, APIs running");
         }
     })
-
-
 });
 
 /*
@@ -54,6 +52,68 @@ app.get('/api/libri', (request, response) => {
         response.send(result);
     });
 })
+
+/*app.get('/api/libri/search/:titolo', (request, response) => {
+    database.collection("Libri").find({"Titolo":request.params.titolo}).toArray((error, result) => {
+        if(error) {
+            console.log(error);
+        }
+        response.send(result);
+    });
+})*/
+
+app.get('/api/libri/search/:titolo', (request, response) => {
+database.collection("Libri").find({"Titolo": new RegExp('.*' + request.params.titolo + '.*')}).toArray((error, result) => {
+        if(error) {
+            console.log(error);
+        }
+        response.send(result);
+    });
+})
+
+app.get('/api/libri/filtro/:filtro', (request, response) => {
+    switch(request.params.filtro){
+        case "Prezzo":
+            database.collection("Libri").find({}).sort({"Prezzo": -1}).toArray((error, result) => {
+                if(error) {
+                    console.log(error);
+                }
+        
+                response.send(result);
+            });
+        break;
+        case "Titolo":
+            database.collection("Libri").find({}).sort({"Titolo": -1}).toArray((error, result) => {
+                if(error) {
+                    console.log(error);
+                }
+        
+                response.send(result);
+            });
+        break;
+        case "Valutazione":
+            database.collection("Libri").find({}).sort({"Valutazione": -1}).toArray((error, result) => {
+                if(error) {
+                    console.log(error);
+                }
+        
+                response.send(result);
+            });
+        break;
+        default:
+            database.collection("Libri").find({}).toArray((error, result) => {
+                if(error) {
+                    console.log(error);
+                }
+        
+                response.send(result);
+            });
+        break;
+    }
+    
+});
+
+
 
 app.post('/api/libri', (request, response) => {
     database.collection("Libri").count({}, function (error, numOfDocs) {
