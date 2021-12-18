@@ -1,9 +1,7 @@
 const routes=[
     {path:'/home',component:home},
     {path:'/catalogo',component:catalogo},
-    {path:'/chi siamo',component:chi_siamo},
-    {path:'/pagina personale',component:pagina_personale},
-    {path:'/vendita',component:vendita},
+    {path:'/chi siamo',component:chi_siamo}
 ]
 
 const router=new VueRouter({

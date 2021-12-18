@@ -5,17 +5,22 @@ const container = document.createElement('div');
 container.setAttribute('class', 'container');
 
 
-const h1 = document.createElement('h1');
+const h1 = document.createElement('h3');
 h1.textContent = "AREA PERSONALE";
 
-const a = document.createElement('a');
-a.textContent = "Home";
-a.href = "index.html";
-a.target = "_blank";
 
+const br = document.createElement('br');
 
-container.appendChild(a);
+const homeButton = document.createElement('form');
+const inputButton = document.createElement('input');
+homeButton.action = "index.html";
+inputButton.type = "submit"; inputButton.value = "Home";
+
+homeButton.appendChild(inputButton);
+
+container.appendChild(homeButton);
 container.appendChild(h1);
+container.appendChild(br);
 
 app.appendChild(container);
 
