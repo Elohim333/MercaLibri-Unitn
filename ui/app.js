@@ -1,7 +1,7 @@
 const routes=[
     {path:'/home',component:home},
     {path:'/catalogo',component:catalogo},
-    {path:'/chi siamo',component:chi_siamo}
+    {path:'/chi siamo',component:chi_siamo},
 ]
 
 const router=new VueRouter({
