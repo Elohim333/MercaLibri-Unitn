@@ -8,13 +8,15 @@ container.setAttribute('class', 'container');
 const h1 = document.createElement('h1');
 h1.textContent = "RECENSIONI";
 
-const a = document.createElement('a');
-a.textContent = "Home";
-a.href = "index.html";
-a.target = "_blank";
+const homeButton = document.createElement('form');
+const inputButton = document.createElement('input');
+homeButton.action = "index.html";
+inputButton.type = "submit"; inputButton.value = "Home";
+
+homeButton.appendChild(inputButton);
 
 
-container.appendChild(a);
+container.appendChild(homeButton);
 container.appendChild(h1);
 
 app.appendChild(container);
