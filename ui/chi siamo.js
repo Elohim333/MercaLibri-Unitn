@@ -1,4 +1,4 @@
 const chi_siamo = {
     template:
-    `<div><p>HOME</p></div> `
+    `<div><p>Siamo gli animatori della serata</p></div> `
 }
