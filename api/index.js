@@ -55,7 +55,7 @@ var DATABASE = "MercaLibri_Unitn";
 var database;
 
 
-app.listen(49146, () => {
+module.exports = app.listen(49146, () => {
     MongoClient.connect(CONNECTION_STRING, { useNewUrlParser: true, 
     useUnifiedTopology: true}, (error, client) => {
         if(error){
@@ -307,46 +307,45 @@ app.get('/api/libri/filtro/:filtro', (request, response) => {
  *     - application/json
  *     produces:
  *     - application/json
- *     parameters:
- *     - in: body
- *       name: body
+ *     requestBody:
  *       description: book object that needs to be added to the store
  *       required: true
- *       schema:
- *         book:
- *           type: object
- *           required:
- *           - ISBN
- *           - titolo
- *           - autore
- *           - materia
- *           - valutazione
- *           - venditore
- *           - prezzo
- *           - casa_editrice
- *           - libro_universitario
- *           properties:
- *             ISBN:
- *               type: string
- *             titolo:
- *               type: string
- *               example: Analisi Matematica 1
- *             autore:
- *               type: string
- *               example: Romeo Brunetti
- *             materia:
- *               type: string
- *               example: Analisi
- *             valutazione:
- *               type: integer
- *             venditore:
- *               type: string
- *             prezzo:
- *               type: number
- *             casa_editrice:
- *               type: string
- *             libro_universitario:
- *               type: boolean
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *             - ISBN
+ *             - titolo
+ *             - autore
+ *             - materia
+ *             - valutazione
+ *             - venditore
+ *             - prezzo
+ *             - casa_editrice
+ *             - libro_universitario
+ *             properties:
+ *               ISBN:
+ *                 type: string
+ *               Titolo:
+ *                 type: string
+ *                 example: Analisi Matematica 1
+ *               Autore:
+ *                 type: string
+ *                 example: Romeo Brunetti
+ *               Materia:
+ *                 type: string
+ *                 example: Analisi
+ *               Valutazione:
+ *                 type: integer
+ *               Venditore:
+ *                 type: string
+ *               Prezzo:
+ *                 type: number
+ *               Casa_editrice:
+ *                 type: string
+ *               Libro_universitario:
+ *                 type: boolean
  *     responses:
  *       200:
  *         description: Book added succesfully
@@ -445,7 +444,7 @@ app.get('/api/users', (request, response) => {
 /**
  * @swagger
  * /api/users:
- *   put:
+ *   post:
  *     tags:
  *     - user
  *     summary: Edit the user's personal email
@@ -453,25 +452,27 @@ app.get('/api/users', (request, response) => {
  *     - application/json
  *     produces:
  *     - application/json
- *     parameters:
- *     - in: body
- *       name: mail
- *       description: mail that needs to be updated. Please test this api in our own server, as the request is sent via form and it doesn't support the PUT method. We instead use a trick calling a post api and setting a hidden input to "put", so we know that we have to update a mail.
+ *     requestBody:
+ *       description: mail that needs to be updated. Please note that this api is considered PUT as the request is sent via form and it doesn't support the PUT method. We instead use a trick calling a post api and setting a hidden input to "put", so we know that we have to update a mail.
  *       required: true
- *       schema:
- *         VecchiaMail:
- *           type: string
- *         NuovaMail:
- *           type: string
- *         ConfermaMail:
- *           type: string
- *         method:
- *           type: string
- *           example: put
- *           required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               VecchiaMail:
+ *                 type: string
+ *               NuovaMail:
+ *                 type: string
+ *               ConfermaMail:
+ *                 type: string
+ *               method:
+ *                 type: string
+ *                 example: put
+ *                 required: true
  *     responses:
  *       200:
- *         description: Mail aggiornata con successo
+ *         description: Mail aggiornata con successo (does not check if user exists, we consider that the user already has logged in)
  */
 
 //aggiorna mail paypal utente

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "test": "nodemon test/test.js | tap-spec"
   },
   "author": "MLB",
   "license": "ISC",
@@ -17,6 +17,7 @@
     "nodemon": "^2.0.15",
     "swagger-jsdoc": "^6.1.0",
     "swagger-ui-express": "^4.2.0",
+    "tap-spec": "^5.0.0",
     "vue": "^2.6.14"
   },
   "devDependencies": {
