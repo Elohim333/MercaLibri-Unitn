@@ -55,7 +55,7 @@ var DATABASE = "MercaLibri_Unitn";
 var database;
 
 
-app.listen(49146, () => {
+module.exports = app.listen(49146, () => {
     MongoClient.connect(CONNECTION_STRING, { useNewUrlParser: true, 
     useUnifiedTopology: true}, (error, client) => {
         if(error){
