@@ -49,3 +49,7 @@ Google Docs per la scrittura del documento riassuntivo del sistema.
 <h4>CONTRIBUTORS</h4>
 Biancuzz
 <br/>
+francescoboldrin
+<br/>
+Elohim333
+<br/>
