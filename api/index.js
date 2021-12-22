@@ -498,3 +498,29 @@ app.post('/api/users', (request, response) => {
     else response.json("Errore");
 })
 
+/**
+ * @swagger
+ * /api/libri/{id}:
+ *   delete:
+ *     summary: Delete a book.
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *             type: string
+ *         required: true
+ *         description: the book id
+ *     responses:
+ *       200:
+ *         description: the book was deleted
+ *       404:
+ *         description: the book was not found
+*/
+
+app.delete('/api/libri/:id', (request, response) => {
+    database.collection("Libri").deleteOne({
+        idLibro: parseInt(request.params.id)
+    });
+
+    response.json("Libro cancellato");
+})
