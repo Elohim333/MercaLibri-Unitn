@@ -14,6 +14,8 @@ Per installare e usare il sistema MercaLibri Unitn, è sufficiente scaricare la 
 Alternativamente, il comando per eseguire il testing è "npm test", da lanciare sempre quando si è all'interno della directory api.
 <br/>
 <br/>
+<h4>WIKI</h4>
+La wiki del sistema è disponibile al link https://github.com/Elohim333/MercaLibri-Unitn/wiki
 <h4>SISTEMI UTILIZATI</h4>
 MongoDB per avere delle collezioni online
 <br/>
