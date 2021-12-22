@@ -1,6 +1,8 @@
 # INGSOFTWARE-G04
 Progetto 2021 ingegneria del software G04 - MercaLibri Unitn
 <br/>
+Il sistema qui presentato rappresenta un mock-up dell'idea descritta nel primo documento del G03, considerando solamente l'attore "Utente autenticato".
+<br/>
 <br/>
 <h4>!!!----LEGGERE CON ATTENZIONE----!!!</h4>
 Il sistema ha incorporato il sistema di testing. Se lo si vuole provare, è altamente consigliato eseguirlo prima di QUALSIASI ALTRA COSA, in quanto un qualsiasi cambiamento nella collection di MongoDB causerà un errore nella ricerca del match tra il valore expected e il valore restituito effettivo dalle API. Grazie.
